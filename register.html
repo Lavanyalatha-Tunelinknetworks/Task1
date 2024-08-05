@@ -7,16 +7,19 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            color:rgb(0, 0, 0);
         }
         .rcontainer {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
+            background-image: url("im.jpg");
+            padding: 40px;
+            border-radius: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            width: 900px;
+            height: max-content;
             margin: 50px auto;
             text-align: center;
+            float:initial;
+
         }
         table {
             width: 100%;
@@ -34,27 +37,25 @@
             width: 80%;
             padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 15px;
+            font-size: small;
         
         }
-        .required::after{
-            color: red;
-        }
         input[type="submit"] {
-            width: 100%;
+            width:max-content;
             padding: 10px;
-            background-color: #007bff;
+            background-color: #000000;
             border: none;
-            border-radius: 5px;
-            color: white;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
             font-size: 16px;
             cursor: pointer;
         }
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #1f1f20;
         }
         a {
-            color: #007bff;
+            color: #000000;
             text-decoration: none;
         }
         a:hover {
@@ -69,8 +70,8 @@
 </head>
 <body>
     <div class="rcontainer">
+        <img class="img" src="imag.png" alt="login" width=50 height="50">
         <h1>REGISTER HERE</h1>
-        
         <form id="registerForm">
             <table>
                 <tr>
@@ -99,7 +100,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <lable class=required >Confrim Password:</lable>
+                        <lable class=required >Confrim-Password:</lable>
                         <input type="password" name="confirmPassword" placeholder="Confirm password">
                     </td>
                 </tr>
@@ -110,7 +111,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="login.html">Already anm user? Login here</a>
+                        <a href="login.html">Already a user? Login here</a>
                     </td>
                 </tr>
             </table> 
