@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .rcontainer {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px 0;
+        }
+        select{  
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="text"],input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        
+        }
+        .required::after{
+            color: red;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .required::after{
+            content: "*";
+            color: red;
+            align-items: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="rcontainer">
+        <h1>REGISTER HERE</h1>
+        
+        <form id="registerForm">
+            <table>
+                <tr>
+                    <td> 
+                        <lable class="required">User type:</lable>
+                        <select name="userType">
+                            <option value="">Select your role</option>
+                            <option value="admin">Admin</option>
+                            <option value="broker">Broker</option>
+                            <option value="agent">Agent</option>
+                            <option value="buyer">Buyer</option>
+                        </select>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <lable class=required >Username:</lable>
+                        <input type="text" name="username" placeholder="Enter your username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable class=required >Password:</lable>
+                        <input type="password" name="password" placeholder="Enter your password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable class=required >Confrim Password:</lable>
+                        <input type="password" name="confirmPassword" placeholder="Confirm password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="REGISTER">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="login.html">Already anm user? Login here</a>
+                    </td>
+                </tr>
+            </table> 
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
