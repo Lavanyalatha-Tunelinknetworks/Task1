@@ -7,17 +7,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #a0ebfa;
+            color:rgb(0, 0, 0);
         }
         .lcontainer {
-            background-color: rgb(243, 245, 242);
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            margin: 50px auto;
+            background-image: url("im.jpg");
+            padding: 50px;
+            border-radius: 25px;
+            width: 700px;
+            height: max-content;
+            margin: 100px auto;
             text-align: center;
+            float:initial;
+
         }
+        .lcontainer:hover{
+            box-shadow: 10px 10px 10px rgba(65, 250, 9, 0);
+        }
+
         table {
             width: 100%;
         }
@@ -27,25 +33,25 @@
         select, input[type="text"], input[type="password"] {
             width: 80%;
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #0b0b0b;
+            border-radius: 15px;
         
         }
         input[type="submit"] {
-            width: 100%;
+            width:fit-content;
             padding: 10px;
-            background-color: #007bff;
+            background-color: #000000;
             border: none;
             border-radius: 5px;
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 16px;
             cursor: pointer;   
         }
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #232322;
         }
         a {
-            color: #007bff;
+            color: #000000;
             text-decoration: none;
         }
         a:hover {
@@ -56,26 +62,27 @@
             color: red;
             align-items: end;
         }
+        .background{
+            padding: 0%;
+            background-size:100%;
+            height:1000px;
+            width: 100%;
+        }
+        .img{
+            image-rendering:auto;
+            
+        }
     </style>
 </head>
+<center>
 <body>
+    <div class="background">
     <div class="lcontainer">
+        <img class="img" src="imag.png" alt="login" width=50 height="50">
         <h1>LOGIN HERE</h1>
         
         <form id="loginForm">
             <table>
-                <tr>
-                    <td> 
-                        <lable class="required">User type:</lable>
-                        <select name="userType">
-                            <option value="">Select your role</option>
-                            <option value="admin">Admin</option>
-                            <option value="broker">Broker</option>
-                            <option value="agent">Agent</option>
-                            <option value="buyer">Buyer</option>
-                        </select>
-                    </td> 
-                </tr>
                 <tr>
                     <td>
                         <lable class="required">User name:</lable>
@@ -95,12 +102,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="register.html">are new eyou user? Register here</a>
+                        <a href="register.html">New user? Register here</a>
                     </td>
                 </tr>
             </table> 
         </form>
     </div>
+    </div>
     <script src="login.js"></script>
 </body>
+</center>
 </html>
